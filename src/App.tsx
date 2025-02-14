@@ -10,16 +10,16 @@ function App() {
 
   return (
     <>
-        <BrowserRouter>
-            <Routes>
-                <Route path={"/home"} element={<Home/>}/>
-                <Route path={""} element={<Home/>}/>
-                <Route path={"/enlist"} element={<Enlist/>}/>
-                <Route path={"/helldiver-guide"} element={<HelldiverGuide/>}/>
-                <Route path={"/bestiary/:faction"} element={<Bestiary/>}/>
-                <Route path={"*"} element={<Navigate to={"/home"} replace/>}/>
-            </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/home"} element={<Home/>}/>
+          <Route path={""} element={<Home/>}/>
+          <Route path={"/enlist"} element={<Enlist/>}/>
+          <Route path={"/helldiver-guide"} element={<HelldiverGuide/>}/>
+          <Route path={"/bestiary/:faction"} element={<Bestiary/>}/>
+          <Route path={"*"} element={<Navigate to={"/home"} replace/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

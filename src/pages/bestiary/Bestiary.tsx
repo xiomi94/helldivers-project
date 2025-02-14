@@ -1,9 +1,7 @@
-
-
 function Bestiary() {
-    return(
-        <>Hola soy la página del Bestiario</>
-    )
+  return (
+    <>Hola soy la página del Bestiario</>
+  )
 }
 
 export default Bestiary
