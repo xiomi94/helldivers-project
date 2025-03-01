@@ -1,0 +1,84 @@
+.header {
+  height: 88px;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  flex: 0 0 auto;
+}
+
+.helldivers-logo {
+  width: 235px;
+  height: 94px;
+  margin-left: -34px;
+}
+
+.hamburger-button-icon {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.hamburger-button-icon > i {
+  color: #FFEA00;
+  font-size: 30px;
+}
+
+.header-menu-medium-size-navigation {
+  display: none;
+  list-style: none;
+  column-gap: 10px;
+}
+
+.header-menu-medium-size-navigation > li {
+  user-select: none;
+}
+
+.header-menu-medium-size-button-navigation {
+  color: #FFEA00;
+  background-color: transparent;
+  border: none;
+  font-family: 'Insignia', sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-menu-medium-size-button-subnavigation {
+  display: none;
+  position: absolute;
+  background-color: #282828;
+  border: 1px solid #FFEA00;
+  list-style: none;
+  top: calc(100% + 25px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 0;
+  min-width: 200px;
+  flex-direction: column;
+}
+
+.header-menu-medium-size-button-subnavigation > li {
+  text-align: center;
+  padding: 20px 0;
+  user-select: none;
+}
+
+@media (min-width: 769px) {
+  .hamburger-button-icon {
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+
+  .header-menu-medium-size-navigation {
+    display: flex;
+  }
+
+  .header-menu-medium-size-button-subnavigation {
+    display: flex;
+  }
+}
