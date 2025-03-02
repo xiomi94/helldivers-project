@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Helldivers Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I decided to make this page because I am a fan of the game "Helldivers 2" and I liked this topic to do a class project.
 
-Currently, two official plugins are available:
+The page consists of information about the game and a bit of humor about it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
 
-## Expanding the ESLint configuration
+My project is developed with the next technologies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* [![React][React]][React-url]
+* [![Vite][Vite]][Vite-url]
+* [![Typescript][Typescript]][Typescript-url]
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Third party software
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+I used: 
+- [React router](https://reactrouter.com/start/library/routing): Library for navigation system
+- [Boostrap Icons](https://icons.getbootstrap.com): Library for the icons used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Design
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+For my design I used Figma, this is my [own design](https://www.figma.com/design/2QacjY6ge2TGqHLCWV7Q8S/PROYECTO-HELLDIVERS?node-id=0-1&t=JGnyVir8uMAfDgw7-1)
+
+
+## Authors
+
+- **Xiomara Jiménez Velázquez**
+
+
+[React]: https://shields.io/badge/react-black?logo=react&style=for-the-badge
+[React-url]: https://es.react.dev/reference/react
+[Vite]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://vite.dev/
+[Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript-url]: https://www.typescriptlang.org/docs/
