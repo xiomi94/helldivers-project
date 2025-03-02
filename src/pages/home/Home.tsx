@@ -1,6 +1,12 @@
 import "./Home.css"
 import ButtonHelldiver from "../../components/button-helldiver/ButtonHelldiver.tsx";
 import {useNavigate} from "react-router";
+import {
+  adviceSuperEarthImage, enlistTodayImage,
+  helldiversImage, helldiversSaluteAdviceImage,
+  helldiversSaluteGif,
+  missionAccomplishedImage
+} from "../../assets/images";
 
 function Home() {
   const navigate = useNavigate()
@@ -12,7 +18,7 @@ function Home() {
   return (
     <>
       <div className="home-mobile">
-        <img src="/src/assets/images/helldivers.jpeg" className="home-image-mobile" alt="helldivers-photo"/>
+        <img src={helldiversImage} className="home-image-mobile" alt="helldivers-photo"/>
         <section className="home-main-content-message">
           <h2>¡ATENCIÓN SOLDADO!</h2>
           <p className="home-main-content-message-p">
@@ -25,13 +31,13 @@ function Home() {
             ALÍSTATE
           </ButtonHelldiver>
         </section>
-        <img src="/src/assets/images/helldivers-salute.gif" className="helldivers-gif" alt="helldivers gif"/>
+        <img src={helldiversSaluteGif} className="helldivers-gif" alt="helldivers gif"/>
       </div>
 
       <div className="home-desktop">
         <aside>
-          <img src="/src/assets/images/mission-accomplished.jpeg" alt="mission-accomplished"/>
-          <img src="/src/assets/images/advice-super-earth.jpg" alt="advice-super-earth"/>
+          <img src={missionAccomplishedImage} alt="mission-accomplished"/>
+          <img src={adviceSuperEarthImage} alt="advice-super-earth"/>
         </aside>
         <section>
           <h2>¡ATENCIÓN CIUDADANO DE SUPERTIERRA!</h2>
@@ -60,8 +66,8 @@ function Home() {
           </ButtonHelldiver>
         </section>
         <aside>
-          <img src="/src/assets/images/enlist-today.png" alt="enlist-today"/>
-          <img src="/src/assets/images/helldivers-salute-advice.jpg" alt="helldivers-salute-advice"/>
+          <img src={enlistTodayImage} alt="enlist-today"/>
+          <img src={helldiversSaluteAdviceImage} alt="helldivers-salute-advice"/>
         </aside>
       </div>
     </>

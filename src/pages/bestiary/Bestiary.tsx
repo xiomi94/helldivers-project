@@ -1,5 +1,6 @@
 import "./Bestiary.css"
 import {useNavigate} from "react-router";
+import {hulkImage} from "../../assets/images";
 
 function Bestiary() {
   const navigate = useNavigate()
@@ -14,7 +15,7 @@ function Bestiary() {
 
       <ul className="bestiary-list">
         <li onClick={() => {navigateTo("/bestiary/automatons")}}>
-          <img src="/src/assets/images/hulk.png"/>
+          <img src={hulkImage} alt="hulk"/>
           <h3>AUTÓMATAS</h3>
         </li>
       </ul>

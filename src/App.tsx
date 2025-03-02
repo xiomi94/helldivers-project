@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <BrowserRouter>
+      <BrowserRouter basename="/helldivers-project">
         <Header/>
         <main className="main-container">
           <Routes>

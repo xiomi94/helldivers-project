@@ -2,6 +2,7 @@ import {useState} from "react";
 import './Header.css'
 import HamburgerHeader from "../hamburger-header/HamburgerHeader.tsx";
 import {useNavigate} from "react-router";
+import {logoImage} from "../../assets/images";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,7 +29,7 @@ function Header() {
   return (
     <>
       <header className="header">
-        <img src="/src/assets/images/logo.png" alt="Helldivers logo" className="helldivers-logo" onClick={() => {menuNavigate("/home")}}/>
+        <img src={logoImage} alt="Helldivers logo" className="helldivers-logo" onClick={() => {menuNavigate("/home")}}/>
         <button className="hamburger-button-icon" onClick={toggleMenu}>
           <i className="bi bi-list"></i>
         </button>
