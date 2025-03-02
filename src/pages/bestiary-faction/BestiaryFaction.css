@@ -1,0 +1,29 @@
+.bestiary-faction-container {
+  color: #FFEA00;
+  padding: 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bestiary-faction-container > ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+  margin: 0;
+  padding: 0;
+  width: min(1024px, 100%);
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .bestiary-faction-container > ul {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .bestiary-faction-container > h2 {
+    font-size: 35px;
+  }
+}
