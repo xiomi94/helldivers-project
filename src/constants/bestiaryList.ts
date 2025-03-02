@@ -5,7 +5,7 @@ export interface EnemiesInterface {
 }
 
 export interface BestiaryFactionInterface {
-  backgroundColor: string,
+  color: string,
   enemies: EnemiesInterface[],
 }
 
@@ -16,7 +16,7 @@ export interface BestiaryListInterface {
 }
 
 const automatons: BestiaryFactionInterface = {
-  backgroundColor: 'red',
+  color: 'red',
   enemies: [
     {
       name: 'Hulk',
@@ -34,7 +34,7 @@ const automatons: BestiaryFactionInterface = {
         '¿Intentaste flanquearlo? Pues prepárate para descubrir que su armadura es tan gruesa que incluso un ataque ' +
         'orbital a veces siente que no hizo suficiente daño.'
       ],
-      imageSrc: "",
+      imageSrc: "/src/assets/images/hulk.png",
     },
     {
       name: "Cuadrúpedo",
@@ -52,7 +52,7 @@ const automatons: BestiaryFactionInterface = {
         ' o te preparas para una experiencia de guerra que haría sudar hasta a un veterano. Y lo peor es que nunca viene solo,' +
         ' siempre está rodeado de otros Autómatas como si fuera el jefe de una pandilla de matones metálicos.'
       ],
-      imageSrc: "",
+      imageSrc: "/src/assets/images/strider.png",
     },
     {
       name: "Berserker",
@@ -67,7 +67,7 @@ const automatons: BestiaryFactionInterface = {
         'Intentar mantener la distancia es complicado porque son rápidos, resistentes y, lo peor de todo, cada golpe que te dan te desarma.' +
         'Así es, no solo te revientan, sino que encima te dejan sin tu arma, porque aparentemente no es suficiente con hacerte sufrir, también quieren verte indefenso y desesperado.'
       ],
-      imageSrc: "",
+      imageSrc: "/src/assets/images/berserker.png",
     },
     {
       name: "Comisario",
@@ -82,14 +82,14 @@ const automatons: BestiaryFactionInterface = {
         ' Es como si estuviera repartiendo Red Bulls invisibles a sus tropas. Y lo peor es que, cuando logras acercarte para matarlo,' +
         ' saca una escopeta y te destroza de cerca, porque claro, ¿qué sería de un líder sin la capacidad de arruinarte la existencia hasta el último segundo?.'
       ],
-      imageSrc: "",
+      imageSrc: "/src/assets/images/commisary.png",
     }
   ]
 
 }
 
 const terminids: BestiaryFactionInterface = {
-  backgroundColor: 'yellow',
+  color: 'yellow',
   enemies: [
     {
       name: "Carroñero",
@@ -124,7 +124,7 @@ const terminids: BestiaryFactionInterface = {
 }
 
 const iluminates: BestiaryFactionInterface = {
-backgroundColor: 'blue',
+  color: 'blue',
   enemies: []
 }
 
