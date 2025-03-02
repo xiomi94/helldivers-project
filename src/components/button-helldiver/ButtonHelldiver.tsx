@@ -4,7 +4,7 @@ import "./ButtonHelldiver.css"
 interface Props {
   children: ReactNode,
   onClickFunc: () => void,
-  buttonStyle: CSSProperties
+  buttonStyle?: CSSProperties
 }
 
 function ButtonHelldiver(props: Props) {
