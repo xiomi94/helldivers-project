@@ -4,6 +4,8 @@ I decided to make this page because I am a fan of the game "Helldivers 2" and I 
 
 The page consists of information about the game and a bit of humor about it.
 
+The web is deployed with GitHub and you can visit it clicking [here](https://xiomi94.github.io/helldivers-project/)
+
 ## Built With
 
 My project is developed with the next technologies:
