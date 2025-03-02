@@ -1,14 +1,15 @@
-import {ReactNode} from "react";
+import {CSSProperties, ReactNode} from "react";
 import "./ButtonHelldiver.css"
 
 interface Props {
   children: ReactNode,
-  onClickFunc: () => void
+  onClickFunc: () => void,
+  buttonStyle: CSSProperties
 }
 
 function ButtonHelldiver(props: Props) {
   return(
-    <button className="button-helldiver" onClick={props.onClickFunc}>
+    <button className="button-helldiver" onClick={props.onClickFunc} style={props.buttonStyle}>
       {props.children}
     </button>
   )
