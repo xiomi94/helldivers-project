@@ -1,5 +1,5 @@
 .header {
-  height: 88px;
+  min-height: 50px;
   background-color: #282828;
   display: flex;
   align-items: center;
@@ -9,8 +9,8 @@
 }
 
 .helldivers-logo {
-  width: 235px;
-  height: 94px;
+  width: 170px;
+  height: auto;
   margin-left: -34px;
 }
 
@@ -72,6 +72,7 @@
 
   .header {
     justify-content: flex-start;
+    min-height: 88px;
   }
 
   .header-menu-medium-size-navigation {
@@ -80,5 +81,9 @@
 
   .header-menu-medium-size-button-subnavigation {
     display: flex;
+  }
+
+  .helldivers-logo {
+    width: 235px;
   }
 }
