@@ -1,0 +1,16 @@
+.footer-container {
+  min-height: 47px;
+  background-color: #282828;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.footer-button-icons {
+  font-size: 30px;
+  background-color: transparent;
+  color: #FFEA00;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
