@@ -1,0 +1,18 @@
+.bestiary-item-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.bestiary-item-container > img {
+  width: 120px;
+  height: 120px;
+  object-fit: scale-down;
+}
+
+@media (min-width: 769px) {
+  .bestiary-item-container > img  {
+    width: 200px;
+    height: 200px;
+  }
+}
