@@ -1,4 +1,17 @@
-import {berserkerImage, commisaryImage, hulkImage, striderImage} from "../assets/images";
+import {
+  berserkerImage,
+  commisaryImage,
+  hulkImage,
+  scavengerImage,
+  striderImage,
+  hunterImage,
+  stalkerImage,
+  bileTitanImage,
+  votelessImage,
+  overseerImage,
+  watcherImage,
+  tripodeImage
+} from "../assets/images";
 
 export interface EnemiesInterface {
   name: string,
@@ -105,10 +118,10 @@ const terminids: BestiaryFactionInterface = {
         'Intentar matarlo es un ejercicio de paciencia porque es rápido, escurridizo y tiene el don de aparecer en el peor momento posible. Justo cuando estás recargando, ' +
         'lanzando una estratagema o simplemente disfrutando de un segundo de calma… ahí está él, chillando como si lo estuvieran apuñalando.'
       ],
-      imageSrc: "",
+      imageSrc: scavengerImage,
     },
     {
-      name: "",
+      name: "Cazador",
       description: [
         'Los Cazadores son como esos tipos que aparecen de la nada en una película de terror justo cuando pensabas que estabas a salvo.' +
         ' Son rápidos, agresivos y tienen una obsesión preocupante con apuñalar Helldivers como si estuvieran participando en un concurso de puñaladas por segundo.\n' +
@@ -119,15 +132,103 @@ const terminids: BestiaryFactionInterface = {
         'Lo peor es que no les basta con golpearte, no. Tienen que lanzarse encima de ti, hacerte una llave de lucha libre y después apuñalarte repetidamente como si les hubieras insultado a la madre.' +
         ' Si no tienes reflejos de ninja y una buena escopeta, básicamente estás condenado.'
       ],
-      imageSrc: "",
+      imageSrc: hunterImage,
     },
-
+    {
+      name: "Acechador",
+      description: [
+        'Los Acechadores son la peor pesadilla de cualquier Helldiver con ganas de vivir en paz. Son básicamente lo que pasaría si un velociraptor,' +
+        ' una sombra y el puro deseo de arruinarte el día se fusionaran en un solo ser.\n' +
+        'Estos desgraciados no atacan de frente como bichos decentes, no. Ellos juegan sucio. Se esconden, acechan, ' +
+        'y justo cuando te relajas un segundo pensando que estás a salvo, ¡pum! Te saltan encima como un cobrador del frac con turbo. ' +
+        'Su especialidad es el susto gratuito y el asesinato express, porque claro, ¿por qué pelear como cualquier otro ' +
+        'enemigo cuando pueden simplemente esperar a que estés distraído y destriparte en un segundo?\n' +
+        'Intentar matarlos es otro dolor de cabeza, porque son rápidos, escurridizos y encima tienen la desfachatez de volverse invisibles. ' +
+        'Así que prepárate para girar en círculos como un paranoico, disparar al aire por puro pánico y, al final, acabar devorado mientras gritas de frustración. ' +
+        'Si el infierno tiene un zoológico, estos bichos son los reyes del lugar.'
+      ],
+      imageSrc: stalkerImage,
+    },
+    {
+      name: "Titán de Bilis",
+      description: [
+        'El Titán de Bilis es básicamente lo que pasaría si un tanque de guerra y una alcantarilla tuvieran un bebé… y luego ese bebé se alimentara exclusivamente de odio y comida podrida.' +
+        ' Es un bicho enorme, viscoso y con más mala leche que un supervisor en lunes por la mañana.\n' +
+        'Este monstruo se especializa en vomitar un chorro de bilis verde radiactiva que derrite todo a su paso, incluyendo tu armadura, tu dignidad y cualquier esperanza de salir ileso.' +
+        ' Además, tiene la resistencia de una roca gigante hecha de puro rencor, porque aunque le lances estratagemas como si fueran confeti en Año Nuevo, seguirá avanzando con una actitud de "¿eso era todo?".\n' +
+        '¿Su punto débil? La parte trasera, porque claro, hasta los titanes tienen problemas con los ataques por la espalda. ' +
+        'Así que prepárate para darle vueltas como si fuera un toro mecánico mientras rezas porque tu equipo no te bombardee accidentalmente (o a propósito, que también pasa). ¡Buena suerte, soldado!'
+      ],
+      imageSrc: bileTitanImage,
+    }
   ]
 }
 
 const iluminates: BestiaryFactionInterface = {
   color: 'blue',
-  enemies: []
+  enemies: [
+    {
+      name: "Voteless",
+      description: [
+        '¡Ay los Voteless! \n' +
+        'Estos chicos son como los zombies de la facción: lentos, torpes y con una obsesión por acercarse demasiado. ' +
+        'Antes, eran ciudadanos de la Super Tierra, pero los Iluminados los secuestraron, les lavaron el cerebro y los convirtieron en estas criaturas sin voluntad. \n' +
+        'En el campo de batalla, los voteless se acercan corriendo y, cuando están lo suficientemente cerca, ' +
+        'te atacan con un zarpazo. Son como ese amigo que no entiende las señales sociales y se te acerca demasiado, ' +
+        'pero en versión alienígena y con garras.\n' +
+        'Aunque no son muy inteligentes, su número puede ser abrumador. Es como si los Iluminados dijeran: "Si no puedes vencerlos, ¡llévalos por cansancio!" \n' +
+        'Así que, si ves a un voteless, no te preocupes demasiado; solo asegúrate de mantener tu distancia y no dejar que te rodeen.'
+      ],
+      imageSrc: votelessImage,
+    },
+    {
+      name: "Overseer",
+      description: [
+        'El overseer es como ese guardia de seguridad que se toma su trabajo demasiado en serio. ' +
+        'Armado con un bastón de energía que puede usarse tanto para atacarte a distancia como para darte un buen golpe si te acercas demasiado,' +
+        ' este tipo no se anda con tonterías. Además, lleva un escudo direccional en su brazo izquierdo, ' +
+        'porque claro, ¿por qué no añadir un poco más de dificultad a tu día? \n' +
+        'Cuando no está disparándote, el overseer se protege tras su escudo, obligándote a pensar estratégicamente en lugar de simplemente disparar a lo loco.' +
+        ' Es como si te desafiara a un juego de ajedrez en medio de una batalla campal. Y si decides atacarlo de frente, prepárate para que te reciba con su bastón de energía,' +
+        ' dándote una lección sobre mantener la distancia adecuada.\n' +
+        'La clave para enfrentarte a un overseer es apuntar a sus puntos débiles y utilizar armas que puedan superar su escudo. ' +
+        'Pero no te confíes, porque estos tipos suelen aparecer en los momentos más inoportunos, listos para convertir tu misión en un desafío aún mayor.' +
+        ' Así que, la próxima vez que lo veas, recuerda: no es solo un enemigo más; es el tipo que hará que te replantees tu estrategia y te recordará que, en el espacio, nadie puede oír tus quejas.'
+      ],
+      imageSrc: overseerImage,
+    },
+    {
+      name: "Watcher",
+      description: [
+        'El Watcher es como ese chivato en la escuela que siempre está al acecho, listo para delatarte en cuanto haces algo mal.' +
+        ' Estos drones flotantes de los Iluminados patrullan sin rumbo fijo hasta que te detectan, ' +
+        'momento en el cual se detienen en seco y lanzan bengalas holográficas para llamar a sus amigos y convertir tu día en un caos. \n' +
+        'No contentos con solo alertar a sus camaradas, los Watchers también pueden atacarte directamente con descargas eléctricas debilitantes si te acercas demasiado,' +
+        ' como si fueran una versión futurista de una valla electrificada. ' +
+        'Su diseño cruciforme y su vuelo a unos cinco metros del suelo los hacen parecerse a una lámpara de araña flotante con muy malas intenciones. \n' +
+        'La clave para lidiar con estos soplones voladores es eliminarlos antes de que completen su llamada de refuerzos. ' +
+        'Afortunadamente, no están muy blindados, por lo que cualquier arma debería bastar para derribarlos. ' +
+        'Pero no te confíes; si uno logra alertar a sus aliados, prepárate para enfrentarte a una oleada de enemigos adicionales que harán que desees haber sido más rápido con el gatillo.'
+      ],
+      imageSrc: watcherImage,
+    },
+    {
+      name: "Trípode",
+      description: [
+        'El trípode es como si los Iluminados hubieran decidido que un trípode gigante con un solo ojo láser era justo lo que necesitaban para arruinarte el día.' +
+        ' Imagina una lámpara de escritorio mutante que, en lugar de iluminar tu libro, prefiere desintegrarte con un rayo láser continuo desde su único y amenazante ojo. \n' +
+        'Pero espera, porque este "adorable" trípode no se conforma con un simple láser. ' +
+        'No, también tiene la amabilidad de electrocutarte con descargas eléctricas si te acercas demasiado,' +
+        ' como si fuera un pastor eléctrico con complejo de superioridad. ' +
+        'Y por si fuera poco, cuando intentas devolverle el favor y atacarlo, ' +
+        'activa un escudo que puede absorber más daño que tu paciencia en una misión fallida. \n' +
+        'En resumen, enfrentarse a un trípode es como intentar apagar un incendio con una pistola de agua: frustrante,' +
+        ' peligroso y probablemente terminarás chamuscado. Así que, la próxima vez que veas a este trípode con complejo de dios,' +
+        ' recuerda traer tus mejores armas y una buena dosis de paciencia... o simplemente corre en dirección contraria.'
+      ],
+      imageSrc: tripodeImage
+    }
+  ]
 }
 
 export const bestiaryList: BestiaryListInterface = {
