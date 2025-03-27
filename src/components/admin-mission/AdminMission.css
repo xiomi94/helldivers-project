@@ -1,0 +1,58 @@
+.admin-mission-container {
+  border: 1px solid #FFEA00;
+  width: 100%;
+}
+
+.admin-mission-form {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.admin-mission-form-row {
+  display: flex;
+}
+
+.admin-mission-form-input {
+  font-size: 20px;
+  min-width: 0;
+}
+
+.admin-mission-form-input-flex-fill {
+  flex: 1 1 auto;
+}
+
+.admin-mission-form-input-flex-none {
+  flex: none;
+}
+
+.admin-mission-form-textarea {
+  resize: vertical;
+}
+
+.admin-mission-form-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 5px;
+}
+
+.admin-mission-form-input-min450w {
+  min-width: min(calc(100% - 6px), 450px);
+}
+
+.admin-mission-form-input-percent {
+  width: 70px;
+}
+
+.admin-mission-form-buttons {
+  padding: 5px 0;
+}
+
+.admin-mission-form-buttons-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 10px;
+}
