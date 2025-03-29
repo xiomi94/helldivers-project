@@ -3,20 +3,24 @@
 
   <channel>
     <title>Salvar Proyecto del Ángel</title>
+    <link>https://xiomi94.github.io/helldivers-project/rss.xml</link>
     <description>Los Iluminados están amenazando la paz del planeta Proyecto del Ángel, defiende a tus hermanos de la Super Tierra</description>
     <p>Defender de la amenazada Iluminada</p>
     <item>
       <title>Salvar ciudadanos de Super Tierra</title>
+      <link>https://xiomi94.github.io/helldivers-project/rss.xml</link>
       <description>Los ciudadanos del planeta Erata Prime han sido asediados por los termínidos.</description>
       <p>Salvar a 20 ciudadanos de Super Tierra</p>
     </item>
     <item>
       <title>Operación Protege la libertad</title>
+      <link>https://xiomi94.github.io/helldivers-project/rss.xml</link>
       <description>La extraña subversión de la fotosíntesis que sustenta la flora de extraños colores que florece en este planeta sigue siendo un intrigante misterio para los mejores exobiólogos de Supertierra</description>
       <p>Destruye los puestos de avanzada enemigos</p>
     </item>
     <item>
       <title>Orden Suprema</title>
+      <link>https://xiomi94.github.io/helldivers-project/rss.xml</link>
       <description>Esos bichos están descontrolados. Hay que empujarlos de vuelta hasta los planetas barrera, donde se construirá el Sistema de Control Termínido.</description>
       <p>Libera todos los planetas entre Supertierra y los planetas barrera</p>
     </item>
