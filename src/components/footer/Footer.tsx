@@ -51,7 +51,6 @@ function Footer() {
   }
 
   const onClickRssButton = () => {
-    console.log(window.location.origin)
     window.open(`${window.location.origin}/helldivers-project/rss.xml`, "_blank")
   }
 
