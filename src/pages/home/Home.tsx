@@ -1,6 +1,4 @@
 import "./Home.css"
-import ButtonHelldiver from "../../components/button-helldiver/ButtonHelldiver.tsx";
-import {useNavigate} from "react-router";
 import {
   adviceSuperEarthImage, enlistTodayImage,
   helldiversImage, helldiversSaluteAdviceImage,
@@ -14,12 +12,7 @@ import {MissionInterface} from "../../interfaces/missionsInterfaces.ts";
 import Mission from "../../components/mission/Mission.tsx";
 
 function Home() {
-  const navigate = useNavigate()
   const [mission, setMissions] = useState<{ [key: string]: MissionInterface }>({})
-
-  const navigateTo = (url: string) => {
-    navigate(url)
-  }
 
   useEffect(() => {
     const missionRefFirebase = ref(database, 'missions')
@@ -47,11 +40,6 @@ function Home() {
             La democracia necesita héroes como tú. Únete a las filas de los Helldivers y defiende la libertad de la
             galaxia con fuego y acero. Solo juntos venceremos. ¿Responderás al llamado?
           </p>
-          <ButtonHelldiver onClickFunc={() => {
-            navigateTo("/enlist")
-          }}>
-            ALÍSTATE
-          </ButtonHelldiver>
           <h2 className={"home-mission-title"}>Misiones</h2>
           <ul className={"home-missions-list"}>
             { missionsRender }
@@ -84,12 +72,6 @@ function Home() {
             Libertad. Democracia. Fuego Supremo<br/>
             ¿Responderás al llamado, soldado?
           </p>
-
-          <ButtonHelldiver onClickFunc={() => {
-            navigateTo("/enlist")
-          }} buttonStyle={{ fontSize: "40px", padding: "30px 40px" }}>
-            ALÍSTATE
-          </ButtonHelldiver>
           <h2 className={"home-mission-title"}>Misiones</h2>
           <ul className={"home-missions-list"}>
             { missionsRender }

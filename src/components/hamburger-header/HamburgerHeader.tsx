@@ -36,13 +36,6 @@ function HamburgerHeader(props: Props) {
               </li>
             </ul>
           </li>
-          <li>
-            <button className="hamburger-menu-button-navigate" onClick={() => {
-              navigateMenu("/enlist")
-            }}>
-              ALÍSTATE
-            </button>
-          </li>
         </ul>
       </nav>
     </div>

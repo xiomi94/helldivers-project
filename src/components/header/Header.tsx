@@ -46,10 +46,6 @@ function Header() {
 
             </button>
           </li>
-          <li>
-            <button className="header-menu-medium-size-button-navigation" onClick={() => {menuNavigate("/enlist")}}>ALÍSTATE
-            </button>
-          </li>
         </ul>
       </header>
 

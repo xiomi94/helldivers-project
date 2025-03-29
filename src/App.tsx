@@ -1,7 +1,6 @@
 import './App.css'
 import {BrowserRouter, Navigate, Route, Routes} from "react-router";
 import Home from "./pages/home/Home.tsx";
-import Enlist from "./pages/enlist/Enlist.tsx";
 import Bestiary from "./pages/bestiary/Bestiary.tsx";
 import Header from "./components/header/Header.tsx";
 import Footer from "./components/footer/Footer.tsx";
@@ -20,7 +19,6 @@ function App() {
           <Routes>
             <Route path={"/home"} element={<Home/>}/>
             <Route path={""} element={<Home/>}/>
-            <Route path={"/enlist"} element={<Enlist/>}/>
             <Route path={"/bestiary"} element={<Bestiary/>}/>
             <Route path={"/bestiary/:faction"} element={<BestiaryFaction/>}/>
             <Route path={"/admin-missions"} element={<AdminMissions/>}/>
