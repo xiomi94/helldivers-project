@@ -2,6 +2,9 @@
 <rss version="2.0">
 
   <channel>
+    <title>Misiones Helldivers</title>
+    <link>https://xiomi94.github.io/helldivers-project/rss.xml</link>
+    <description>Misiones del Helldiver</description>
     <item>
       <title>Salvar Proyecto del Ángel</title>
       <link>https://xiomi94.github.io/helldivers-project/rss.xml</link>
