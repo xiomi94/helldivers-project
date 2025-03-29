@@ -5,14 +5,7 @@ import {database} from "../../utils/initializeFirebase.ts";
 import {ref, get, update, remove} from "firebase/database";
 import {useEffect, useState} from "react";
 import {v4 as uuidv4} from 'uuid'
-
-export interface MissionInterface {
-  title: string,
-  description: string,
-  requirement: string,
-  percent: number,
-  isNew: boolean
-}
+import {MissionInterface} from "../../interfaces/missionsInterfaces.ts";
 
 function AdminMissions() {
 

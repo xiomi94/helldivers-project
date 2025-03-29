@@ -7,13 +7,35 @@ import {
   helldiversSaluteGif,
   missionAccomplishedImage
 } from "../../assets/images";
+import {useEffect, useState} from "react";
+import {ref, onValue} from "firebase/database";
+import {database} from "../../utils/initializeFirebase.ts";
+import {MissionInterface} from "../../interfaces/missionsInterfaces.ts";
+import Mission from "../../components/mission/Mission.tsx";
 
 function Home() {
   const navigate = useNavigate()
+  const [mission, setMissions] = useState<{ [key: string]: MissionInterface }>({})
 
   const navigateTo = (url: string) => {
     navigate(url)
   }
+
+  useEffect(() => {
+    const missionRefFirebase = ref(database, 'missions')
+    onValue(missionRefFirebase, (snapshot) => {
+      if (snapshot.exists()) {
+        setMissions(snapshot.val())
+      }
+    })
+  }, []);
+
+  const missionsRender = Object.entries(mission).map((entry) => {
+    const key = entry[0]
+    const value = entry[1]
+
+    return <Mission mission={value} key={key}/>
+  })
 
   return (
     <>
@@ -30,12 +52,16 @@ function Home() {
           }}>
             ALÍSTATE
           </ButtonHelldiver>
+          <h2 className={"home-mission-title"}>Misiones</h2>
+          <ul className={"home-missions-list"}>
+            { missionsRender }
+          </ul>
         </section>
         <img src={helldiversSaluteGif} className="helldivers-gif" alt="helldivers gif"/>
       </div>
 
       <div className="home-desktop">
-        <aside>
+        <aside className={"home-desktop-aside"}>
           <img src={missionAccomplishedImage} alt="mission-accomplished"/>
           <img src={adviceSuperEarthImage} alt="advice-super-earth"/>
         </aside>
@@ -64,8 +90,12 @@ function Home() {
           }} buttonStyle={{ fontSize: "40px", padding: "30px 40px" }}>
             ALÍSTATE
           </ButtonHelldiver>
+          <h2 className={"home-mission-title"}>Misiones</h2>
+          <ul className={"home-missions-list"}>
+            { missionsRender }
+          </ul>
         </section>
-        <aside>
+        <aside className={"home-desktop-aside"}>
           <img src={enlistTodayImage} alt="enlist-today"/>
           <img src={helldiversSaluteAdviceImage} alt="helldivers-salute-advice"/>
         </aside>

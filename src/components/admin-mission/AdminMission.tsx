@@ -1,6 +1,6 @@
 import './AdminMission.css'
-import {MissionInterface} from "../../pages/admin-missions/AdminMissions.tsx";
 import {useState} from "react";
+import {MissionInterface} from "../../interfaces/missionsInterfaces.ts";
 
 interface Props {
   mission: Partial<MissionInterface>,
