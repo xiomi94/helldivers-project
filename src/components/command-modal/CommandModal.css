@@ -1,0 +1,52 @@
+.command-modal-container {
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  color: #FFEA00;
+  justify-content: center;
+  font-size: 60px;
+  row-gap: 20px;
+}
+
+.command-modal-close-button {
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  color: red;
+}
+
+.command-modal-row-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+.command-modal-arrow {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .command-modal-container {
+    font-size: 90px;
+    row-gap: 30px;
+  }
+
+  .command-modal-row-container {
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .command-modal-container {
+    font-size: 120px;
+    row-gap: 40px;
+  }
+
+  .command-modal-row-container {
+    column-gap: 40px;
+  }
+}
