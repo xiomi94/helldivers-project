@@ -50,9 +50,17 @@ function Footer() {
     alert("Comando para entrar al administrador de misions: ARRIBA, ABAJO, DERECHA, IZQUIERDA, ARRIBA")
   }
 
+  const onClickRssButton = () => {
+    console.log(window.location.origin)
+    window.open(`${window.location.origin}/helldivers-project/rss.xml`, "_blank")
+  }
+
   return (
     <>
       <footer className="footer-container">
+        <button className="footer-button-icons">
+          <i className="bi bi-rss" onClick={onClickRssButton}></i>
+        </button>
         <button className="footer-button-icons">
           <i className="bi bi-shield" onClick={onClickShowCommandUser}></i>
         </button>
