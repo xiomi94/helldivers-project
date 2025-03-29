@@ -13,9 +13,15 @@ function BestiaryFaction() {
   if (urlParams.faction == "automatons") {
     bestiaryFactionData = bestiaryList.automatons
     bestiaryName = "AUTÓMATAS"
+  } else if (urlParams.faction == "terminids") {
+    bestiaryFactionData = bestiaryList.terminids
+    bestiaryName = "TERMÍNIDOS"
+  } else if (urlParams.faction == "iluminates") {
+    bestiaryFactionData = bestiaryList.iluminates
+    bestiaryName = "ILUMINADOS"
   }
 
-  return (
+    return (
     <div className="bestiary-faction-container">
       {!bestiaryFactionData && <p> No existe ninguna facción con el nombre {urlParams.faction} </p>}
       { bestiaryFactionData && <h2 style={{color: bestiaryFactionData!.color}}>{bestiaryName}</h2> }
