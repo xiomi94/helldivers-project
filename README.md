@@ -6,6 +6,14 @@ The page consists of information about the game and a bit of humor about it.
 
 The web is deployed with GitHub and you can visit it clicking [here](https://xiomi94.github.io/helldivers-project/)
 
+You can also read the RSS with some rss reader, for example:
+![image](https://github.com/user-attachments/assets/fafb6fd9-8b4f-454e-9d74-68ff8393bf4d)
+
+To simulate accessing a mission manager page, a minigame has been created since there is no authentication system. This minigame consists of pressing the arrows on the screen in the following pattern:
+
+- UP, DOWN, RIGHT, LEFT, UP
+
+
 ## Built With
 
 My project is developed with the next technologies:
