@@ -5,7 +5,8 @@ import {useState} from "react";
 interface Props {
   mission: Partial<MissionInterface>,
   onClickSave: (args: { formData: Partial<MissionInterface> }) => void
-  onClickDelete: () => void
+  onClickDelete: () => void,
+  isNew?: boolean
 }
 
 function AdminMission(props: Props) {
@@ -27,6 +28,10 @@ function AdminMission(props: Props) {
     event.preventDefault()
   }
 
+  const onClickRestoreButton = () => {
+    setFormData({...props.mission})
+  }
+
   return (
     <li className={"admin-mission-container"}>
       <form className={"admin-mission-form"} onSubmit={formSubmit}>
@@ -45,7 +50,7 @@ function AdminMission(props: Props) {
         <div className={"admin-mission-form-buttons-container"}>
           <button className={"admin-mission-form-buttons"} onClick={() => props.onClickSave({formData})}>Guardar
           </button>
-          <button className={"admin-mission-form-buttons"}>Restaurar</button>
+          <button className={"admin-mission-form-buttons"} onClick={onClickRestoreButton} disabled={props.isNew}>Restaurar</button>
           <button className={"admin-mission-form-buttons"} onClick={() => props.onClickDelete()}>Borrar</button>
         </div>
       </form>

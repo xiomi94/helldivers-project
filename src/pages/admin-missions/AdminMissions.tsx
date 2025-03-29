@@ -49,7 +49,7 @@ function AdminMissions() {
     })
   }
 
-  const onClickSaveButton = async (args: { id: string, formData: MissionInterface }) => {
+  const onClickSaveButton = async (args: { id: string, formData: Partial<MissionInterface> }) => {
     const missionDatabase = missions[args.id]
     if (missionDatabase) {
       if (missionDatabase.isNew) {
@@ -120,7 +120,7 @@ function AdminMissions() {
     return <>
       <h3 style={{color: '#FFEA00'}}>Mision {index + 1}</h3>
       <AdminMission key={id} mission={mission} onClickDelete={() => onClickDeleteButton({id})}
-                    onClickSave={(args) => onClickSaveButton({...args, id: id})}/>
+                    onClickSave={(args) => onClickSaveButton({...args, id: id})} isNew={value.isNew}/>
     </>
   })
 

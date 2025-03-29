@@ -1,6 +1,7 @@
 .admin-mission-container {
   border: 1px solid #FFEA00;
   width: 100%;
+  max-width: 1000px;
 }
 
 .admin-mission-form {
@@ -17,6 +18,8 @@
 .admin-mission-form-input {
   font-size: 20px;
   min-width: 0;
+  background-color: #282828;
+  color: aliceblue;
 }
 
 .admin-mission-form-input-flex-fill {
@@ -48,6 +51,10 @@
 
 .admin-mission-form-buttons {
   padding: 5px 0;
+  background-color: #fcee63;
+  font-weight: bold;
+  font-family: 'Insignia', sans-serif;
+  font-size: 17px;
 }
 
 .admin-mission-form-buttons-container {
