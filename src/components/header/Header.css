@@ -12,6 +12,7 @@
   width: 170px;
   height: auto;
   margin-left: -34px;
+  cursor: pointer;
 }
 
 .hamburger-button-icon {

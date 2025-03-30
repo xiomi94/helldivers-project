@@ -1,0 +1,16 @@
+.admin-missions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.admin-missions-mission-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  row-gap: 10px;
+  align-items: center;
+}

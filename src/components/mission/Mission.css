@@ -1,0 +1,41 @@
+.missions-container {
+  border: 1px solid #FFEA00;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.mission-border-bottom {
+  border-bottom: 1px solid #FFEA00;
+}
+
+.mission-section-container {
+  margin: 0;
+  padding: 10px 5px;
+}
+
+.mission-requirement-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.mission-requirement-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.mission-text-white {
+  color: white;
+}
+
+.mission-title {
+  font-size: 20px;
+}
+
+.mission-percent-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
