@@ -9,7 +9,8 @@ The web is deployed with GitHub and you can visit it clicking [here](https://xio
 You can also read the RSS with some rss reader, for example:
 ![image](https://github.com/user-attachments/assets/fafb6fd9-8b4f-454e-9d74-68ff8393bf4d)
 
-To simulate accessing a mission manager page, a minigame has been created since there is no authentication system. This minigame consists of pressing the arrows on the screen in the following pattern:
+To simulate accessing a mission manager page, a minigame has been created since there is no authentication system. You only have to press the shield button in the footer.
+This minigame consists of pressing the arrows on the screen in the following pattern:
 
 - UP, DOWN, RIGHT, LEFT, UP
 
