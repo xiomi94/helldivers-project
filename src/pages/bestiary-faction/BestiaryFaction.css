@@ -18,6 +18,50 @@
   box-sizing: border-box;
 }
 
+.bestiary-faction-modal-enemy-container {
+  background-color: rgba(0,0,0,.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bestiary-faction-modal-enemy-name {
+  font-size: 30px;
+  max-width: 80vw;
+  text-align: center;
+}
+
+.bestiary-faction-modal-enemy-description {
+  background-color: #282828;
+  width: 95vw;
+  overflow: auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  max-height: 300px;
+  font-size: 18px;
+  color: white;
+}
+
+.bestiary-faction-modal-enemy-description > p {
+  margin: 22px 10px;
+}
+
+.bestiary-faction-close-button {
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  color: red;
+  font-size: 60px;
+  cursor: pointer;
+}
+
 @media (min-width: 769px) {
   .bestiary-faction-container > ul {
     grid-template-columns: repeat(3,1fr);
@@ -25,5 +69,36 @@
 
   .bestiary-faction-container > h2 {
     font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .bestiary-faction-close-button {
+    font-size: 90px;
+  }
+
+  .bestiary-faction-modal-enemy-description {
+    font-size: 22px;
+  }
+
+  .bestiary-faction-modal-enemy-name {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .bestiary-faction-close-button {
+    font-size: 120px;
+  }
+
+  .bestiary-faction-modal-enemy-description {
+    font-size: 30px;
+    max-height: 550px;
+  }
+
+  .bestiary-faction-modal-enemy-name {
+    font-size: 80px;
   }
 }
