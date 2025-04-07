@@ -18,6 +18,7 @@
   top: 10px;
   right: 5px;
   color: red;
+  cursor: pointer;
 }
 
 .command-modal-row-container {
