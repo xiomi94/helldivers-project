@@ -2,6 +2,7 @@
   border: 1px solid #FFEA00;
   border-radius: 10px;
   font-size: 18px;
+  width: min(100%, 1000px);
 }
 
 .mission-border-bottom {

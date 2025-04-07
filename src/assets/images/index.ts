@@ -1,4 +1,5 @@
 export {default as helldiversImage} from './helldivers.jpeg'
+export {default as homeImage} from './home.jpg'
 export {default as adviceSuperEarthImage} from './advice-super-earth.jpg'
 export {default as berserkerImage} from './berserker.png'
 export {default as commisaryImage} from './commisary.png'

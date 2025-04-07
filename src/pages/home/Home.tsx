@@ -2,7 +2,7 @@ import "./Home.css"
 import {
   adviceSuperEarthImage, enlistTodayImage,
   helldiversImage, helldiversSaluteAdviceImage,
-  helldiversSaluteGif,
+  helldiversSaluteGif, homeImage,
   missionAccomplishedImage
 } from "../../assets/images";
 import {useEffect, useState} from "react";
@@ -32,58 +32,61 @@ function Home() {
 
   return (
     <>
-      <div className="home-mobile">
-        <img src={helldiversImage} className="home-image-mobile" alt="helldivers-photo"/>
-        <section className="home-main-content-message">
-          <h2>¡ATENCIÓN SOLDADO!</h2>
-          <p className="home-main-content-message-p">
-            La democracia necesita héroes como tú. Únete a las filas de los Helldivers y defiende la libertad de la
-            galaxia con fuego y acero. Solo juntos venceremos. ¿Responderás al llamado?
-          </p>
-          <h2 className={"home-mission-title"}>Misiones</h2>
-          <ul className={"home-missions-list"}>
-            { missionsRender }
-          </ul>
-        </section>
-        <img src={helldiversSaluteGif} className="helldivers-gif" alt="helldivers gif"/>
-      </div>
+    <div className="home-mobile">
+      <img src={helldiversImage} className="home-image-mobile" alt="helldivers-photo"/>
+      <section className="home-main-content-message">
+        <h2>¡ATENCIÓN SOLDADO!</h2>
+        <p className="home-main-content-message-p">
+          La democracia necesita héroes como tú. Únete a las filas de los Helldivers y defiende la libertad de la
+          galaxia con fuego y acero. Solo juntos venceremos. ¿Responderás al llamado?
+        </p>
+        <h2 className={"home-mission-title"}>Misiones</h2>
+        <ul className={"home-missions-list"}>
+          {missionsRender}
+        </ul>
+      </section>
+      <img src={helldiversSaluteGif} className="helldivers-gif" alt="helldivers gif"/>
+    </div>
 
-      <div className="home-desktop">
-        <aside className={"home-desktop-aside"}>
-          <img src={missionAccomplishedImage} alt="mission-accomplished"/>
-          <img src={adviceSuperEarthImage} alt="advice-super-earth"/>
-        </aside>
-        <section>
-          <h2>¡ATENCIÓN CIUDADANO DE SUPERTIERRA!</h2>
-          <p>
-            Este es un llamado de emergencia. La democracia necesita valientes, y tú has sido seleccionado para unirte
-            a las filas de los HELLDIVERS, la última línea de defensa contra los enemigos de la libertad.
-          </p>
-          <p>
-            Los Terminidos devoran mundos. Los Autómatas amenazan con su fría maquinaria. Los Iluminados conspiran desde
-            las sombras.
-            Solo con tu ayuda podremos llevar la democracia a cada rincón de la galaxia.
-          </p>
-          <p>
-            Únete ahora y lucha por la gloria de la Super Tierra. Recibirás tu armamento, tu armadura y,
-            lo más importante, la oportunidad de servir a algo más grande que tú mismo.
-          </p>
-          <p>
-            Libertad. Democracia. Fuego Supremo<br/>
-            ¿Responderás al llamado, soldado?
-          </p>
-          <h2 className={"home-mission-title"}>Misiones</h2>
-          <ul className={"home-missions-list"}>
-            { missionsRender }
-          </ul>
-        </section>
-        <aside className={"home-desktop-aside"}>
-          <img src={enlistTodayImage} alt="enlist-today"/>
-          <img src={helldiversSaluteAdviceImage} alt="helldivers-salute-advice"/>
-        </aside>
-      </div>
-    </>
-  )
+    <div className="home-desktop">
+      <aside className={"home-desktop-aside"}>
+        <img src={missionAccomplishedImage} alt="mission-accomplished"/>
+        <img src={adviceSuperEarthImage} alt="advice-super-earth"/>
+      </aside>
+      <div className="home-desktop-container">
+      <img src={homeImage} className="home-desktop-image " alt="helldivers homeImage"/>
+      <section>
+        <h2>¡ATENCIÓN CIUDADANO DE SUPERTIERRA!</h2>
+        <p>
+          Este es un llamado de emergencia. La democracia necesita valientes, y tú has sido seleccionado para unirte
+          a las filas de los HELLDIVERS, la última línea de defensa contra los enemigos de la libertad.
+        </p>
+        <p>
+          Los Terminidos devoran mundos. Los Autómatas amenazan con su fría maquinaria. Los Iluminados conspiran desde
+          las sombras.
+          Solo con tu ayuda podremos llevar la democracia a cada rincón de la galaxia.
+        </p>
+        <p>
+          Únete ahora y lucha por la gloria de la Super Tierra. Recibirás tu armamento, tu armadura y,
+          lo más importante, la oportunidad de servir a algo más grande que tú mismo.
+        </p>
+        <p>
+          Libertad. Democracia. Fuego Supremo<br/>
+          ¿Responderás al llamado, soldado?
+        </p>
+        <h2 className={"home-mission-title"}>Misiones</h2>
+        <ul className={"home-missions-list"}>
+          {missionsRender}
+        </ul>
+      </section>
+    </div>
+    <aside className={"home-desktop-aside"}>
+      <img src={enlistTodayImage} alt="enlist-today"/>
+      <img src={helldiversSaluteAdviceImage} alt="helldivers-salute-advice"/>
+    </aside>
+    </div>
+</>
+)
 }
 
 export default Home
